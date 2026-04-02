@@ -99,4 +99,18 @@ public class EmployeeServiceImpl implements EmployeeService {
         
     }
 
+    /**
+     * 设置员工账号状态
+     * @param status
+     * @param id
+     * @return
+     */
+    public void setStatus(Integer status, Long id) {
+        Employee employee = new Employee();
+        employee.setId(id);
+        employee.setStatus(status);
+
+        employeeMapper.update(employee);
+    }
+
 }
