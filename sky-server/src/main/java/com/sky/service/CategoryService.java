@@ -34,7 +34,7 @@ public interface CategoryService {
     void update(CategoryDTO categoryDTO);
 
     /**
-     * 启用、禁用分类
+     * 设置类型状态
      * @param status
      * @param id
      */
